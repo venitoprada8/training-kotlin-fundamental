@@ -21,10 +21,12 @@ fun main() {
     val b = 1.2 // Double
     val c = 1.3f // Float
     val d = true // Boolean
+    val e = 2L // Long
     println("The value of 'a' is $a")
     println("The value of 'b' is $b")
     println("The value of 'c' is $c")
     println("The value of 'd' is $d")
+    println("The value of 'e' is $e")
     // TODO: Operator
     println("The value of 'a+b' is ${a+b}")
     println("The value of 'b+c' is ${b+c}")
