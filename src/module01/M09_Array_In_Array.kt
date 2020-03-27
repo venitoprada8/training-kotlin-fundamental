@@ -15,6 +15,8 @@ fun main() {
     dataChildrenArray.add(1)
     dataArrayInArray.add(DataArrayInArray(1, dataChildrenArray))
     println("ID : ${dataArrayInArray[0].no}, Data : ${dataArrayInArray[0].dataArray}")
+
+    dataChildrenArray.clear()
     dataChildrenArray.add(6)
     dataChildrenArray.add(4)
     dataChildrenArray.add(9)
@@ -22,4 +24,12 @@ fun main() {
     dataChildrenArray.add(7)
     dataArrayInArray.add(DataArrayInArray(2, dataChildrenArray))
     println("ID : ${dataArrayInArray[1].no}, Data : ${dataArrayInArray[1].dataArray}")
+    dataChildrenArray.clear()
+
+    dataChildrenArray.add(92)
+    dataChildrenArray.add(21)
+    dataChildrenArray.add(72)
+    dataArrayInArray.add(DataArrayInArray(3, dataChildrenArray))
+    println("ID : ${dataArrayInArray[2].no}, Data : ${dataArrayInArray[2].dataArray}")
+    dataChildrenArray.clear()
 }
