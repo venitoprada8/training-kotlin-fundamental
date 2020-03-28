@@ -11,18 +11,14 @@ fun main() {
     val dataArrayInArray = ArrayList<DataArrayInArray02>()
     val dataChildrenArray = ArrayList<Int>()
 
-    dataChildrenArray.add(3)
-    dataChildrenArray.add(4)
-    dataChildrenArray.add(1)
-    dataArrayInArray.add(DataArrayInArray02(1, dataChildrenArray))
-    println("ID : ${dataArrayInArray[0].no}, Data : ${dataArrayInArray[0].dataArray}")
-    dataChildrenArray.clear()
-    dataChildrenArray.add(6)
-    dataChildrenArray.add(4)
-    dataChildrenArray.add(9)
-    dataChildrenArray.add(2)
-    dataChildrenArray.add(7)
-    dataArrayInArray.add(DataArrayInArray02(2, dataChildrenArray))
-    println("ID : ${dataArrayInArray[1].no}, Data : ${dataArrayInArray[1].dataArray}")
-    dataChildrenArray.clear()
+    for (i in 0..5) {
+        val data = (0..50).random()
+        for (j in 0..data) {
+            val d = (1..1000).random()
+            dataChildrenArray.add(d)
+        }
+        dataArrayInArray.add(DataArrayInArray02(i+1, dataChildrenArray))
+        println("ID : ${dataArrayInArray[i].no}, Data : ${dataArrayInArray[i].dataArray}")
+        dataChildrenArray.clear()
+    }
 }
