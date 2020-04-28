@@ -54,4 +54,13 @@ fun main() {
     for (i in 0 until keyList.size) {
         println("${keyList[i]} <-> ${valueList[i]}")
     }
+
+    //valueList
+    println()
+    for (x in 0 until valueList.size) {
+        for (y in 0 until valueList[x].size) {
+            print(valueList[x][y].memberGroup+" ")
+        }
+        println()
+    }
 }
