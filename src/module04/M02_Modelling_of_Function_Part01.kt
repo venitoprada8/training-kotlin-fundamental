@@ -34,4 +34,7 @@ fun getSumData(vararg number: Int) {
 
 fun getAllData(vararg data: String) {
     println("All data = ${data.size}")
+    println("Data 1 = ${data[0]}")
+    println("Data 2 = ${data[1]}")
+    println("Data 3 = ${data[2]}")
 }
